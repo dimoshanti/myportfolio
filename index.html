@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.google.com/s2/favicons?domain=miroweb.ch"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#about">Über mich</a></li>
+        <li><a href="#projects">Projekte</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <h1>Willkommen auf meiner Portfolio-Seite</h1>
+
+    <!-- Über mich -->
+    <section id="about">
+      <h2>Über mich</h2>
+      <p>Ein kurzer Text über mich</p>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+        ipsum dolor sit amet.
+      </p>
+    </section>
+
+    <!-- Projekt Fortschrittsliste mittels Todo-Liste -->
+
+    <section id="project-progress">
+      <h2>Mein Portolio-Projekt</h2>
+      <!-- Aufgabe 1: Idee entwickeln -->
+      <ul id="progressList">
+        <!-- Checkbox für die Projektidee -->
+        <li>
+          <input type="checkbox" id="step1" /><label for="step1"
+            >Projektidee entwickeln</label
+          >
+        </li>
+        <!-- Checkbox für Designskizzen -->
+        <li>
+          <input type="checkbox" id="step2" /><label for="step2"
+            >Designskizzen erstellen</label
+          >
+        </li>
+        <!-- Checkbox für die HTML-Struktur -->
+        <li>
+          <input type="checkbox" id="step3" /><label for="step3"
+            >HTML-Struktur aufbauen</label
+          >
+        </li>
+        <!-- Checkbox für die CSS-Styling -->
+        <li>
+          <input type="checkbox" id="step4" /><label for="step4"
+            >CSS-Styling anwenden</label
+          >
+        </li>
+        <!-- Checkbox für die JavaScript-Interaktivität -->
+        <li>
+          <input type="checkbox" id="step5" /><label for="step5"
+            >JavaScript-Interaktivität hinzufügen</label
+          >
+        </li>
+        <!-- Checkbox für Finale Tests und Optimierung -->
+        <li>
+          <input type="checkbox" id="step6" /><label for="step6"
+            >Finale Tests und Optimierung</label
+          >
+        </li>
+      </ul>
+      <!-- Hier füge ich die Fortschrittsanzeige ein -->
+      <progress id="progressBar" value="0" max="6"></progress>
+    </section>
+
+    <!-- Projekte -->
+    <section id="projects">
+      <h2>Meine Projekte</h2>
+      <p>Hier sind meine Projekte</p>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+        ipsum dolor sit amet.
+      </p>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact">
+      <h2>Kontakt</h2>
+      <p>So erreichst du mich</p>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+        <button type="submit">Senden</button>
+      </form>
+    </section>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

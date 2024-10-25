@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.google.com/s2/favicons?domain=miroweb.ch"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ratespiel</h1>
+    </header>
+    <section>
+      <h2>Viel Glück!</h2>
+      <form onsubmit="return false;">
+        <label for="number">Bitte eine Zahl zwischen 1 und 10 eingeben</label>
+        <input type="number" id="number" name="number" min="1" max="10" />
+        <input type="button" value="Raten" onclick="rate()" />
+      </form>
+      <p id="Ergebnis"></p>
+    </section>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
